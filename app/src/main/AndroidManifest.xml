@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CatalogFever">
         <activity
+            android:name=".List_perform"
+            android:exported="false" />
+        <activity
             android:name=".AddRemoveProducts"
             android:exported="false" />
         <activity

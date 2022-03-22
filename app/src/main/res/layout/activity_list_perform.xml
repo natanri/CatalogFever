@@ -7,42 +7,6 @@
     tools:context=".List_perform">
 
     <TextView
-        android:id="@+id/IDnumber"
-        android:layout_width="122dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="272dp"
-        android:layout_marginTop="188dp"
-        android:text="ID number"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/product"
-        android:layout_width="122dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="144dp"
-        android:layout_marginTop="188dp"
-        android:text="Product"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/number"
-        android:layout_width="122dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="188dp"
-        android:text="Number"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/List"
         android:layout_width="316dp"
         android:layout_height="45dp"
@@ -51,6 +15,29 @@
         android:text="Inventroy"
         android:textAlignment="center"
         android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tvInventory"
+        android:layout_width="341dp"
+        android:layout_height="339dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="152dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="217dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="532dp"
+        android:onClick="saveProduct"
+        android:text="save"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

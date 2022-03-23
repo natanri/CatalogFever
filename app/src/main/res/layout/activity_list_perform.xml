@@ -7,42 +7,6 @@
     tools:context=".List_perform">
 
     <TextView
-        android:id="@+id/IDnumber"
-        android:layout_width="122dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="272dp"
-        android:layout_marginTop="188dp"
-        android:text="ID number"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/product"
-        android:layout_width="122dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="144dp"
-        android:layout_marginTop="188dp"
-        android:text="Product"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/number"
-        android:layout_width="122dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="188dp"
-        android:text="Number"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/List"
         android:layout_width="316dp"
         android:layout_height="45dp"
@@ -51,6 +15,23 @@
         android:text="Inventroy"
         android:textAlignment="center"
         android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="370dp"
+        android:layout_height="537dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="64dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

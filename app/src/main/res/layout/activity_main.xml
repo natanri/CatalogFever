@@ -19,11 +19,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/removeadd"
         android:layout_width="308dp"
         android:layout_height="65dp"
         android:layout_marginStart="52dp"
         android:layout_marginTop="252dp"
+        android:onClick="removeadd"
         android:text="Add or Remove Products"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

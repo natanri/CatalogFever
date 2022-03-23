@@ -6,27 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".AddRemoveProducts">
 
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="224dp"
-        android:text="Remove"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/number"
         android:layout_width="168dp"
         android:layout_height="57dp"
-        android:layout_marginTop="384dp"
-        android:layout_marginEnd="9dp"
+        android:layout_marginStart="214dp"
+        android:layout_marginTop="229dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="445dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="number"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.914"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -34,23 +26,29 @@
         android:id="@+id/textView3"
         android:layout_width="148dp"
         android:layout_height="56dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="388dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="228dp"
+        android:layout_marginEnd="231dp"
+        android:layout_marginBottom="447dp"
         android:text="Reference"
         android:textAlignment="center"
         android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/item"
         android:layout_width="168dp"
         android:layout_height="57dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="148dp"
         android:layout_marginEnd="9dp"
+        android:layout_marginBottom="526dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Item"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.914"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,11 +58,15 @@
         android:id="@+id/textView2"
         android:layout_width="148dp"
         android:layout_height="56dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="231dp"
+        android:layout_marginBottom="523dp"
         android:text="Product"
         android:textAlignment="center"
         android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -83,26 +85,33 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <RadioButton
-        android:id="@+id/radioButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="164dp"
-        android:text="Add"
+    <Button
+        android:id="@+id/Add"
+        android:layout_width="180dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="331dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="332dp"
+        android:onClick="addproduct"
+        android:text="Add Product"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="144dp"
-        android:layout_marginBottom="195dp"
-        android:text="Submit"
+        android:id="@+id/Remove"
+        android:layout_width="180dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="443dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="222dp"
+        android:text="Remove Product"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

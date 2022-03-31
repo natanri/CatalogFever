@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">CatalogFever</string>
+    <string name="btn_add_remove">Add or remove product</string>
+    <string name="btn_view_catalog">View Catalog</string>
+    <string name="TextViewInventory">Inventory</string>
+    <string name="save_item">save</string>
+    <string name="btn_home">back</string>
+    <string name="txt_add_remove_product">Add / remove product</string>
+    <string name="txt_product_name">Product</string>
+    <string name="txt_number_item">Number</string>
+    <string name="rb_add_Product">Add</string>
+    <string name="rb_remove_product">Remove</string>
+    <string name="btn_save_changes">Save</string>
+    <string name="btn_back_home">Back</string>
+
+
 </resources>

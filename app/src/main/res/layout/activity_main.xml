@@ -10,7 +10,7 @@
         android:id="@+id/textView4"
         android:layout_width="383dp"
         android:layout_height="98dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="52dp"
         android:text="Catalog Fever"
         android:textAlignment="center"
         android:textSize="60sp"
@@ -19,24 +19,25 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/removeadd"
+        android:id="@+id/button_removeAdd"
         android:layout_width="308dp"
         android:layout_height="65dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="252dp"
-        android:onClick="removeadd"
-        android:text="Add or Remove Products"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="108dp"
+        android:onClick="removeAdd"
+        android:text="@string/btn_add_remove"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button2_viewcatalog"
         android:layout_width="308dp"
         android:layout_height="65dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="388dp"
-        android:text="View Catalog"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="112dp"
+        android:onClick="listPerform"
+        android:text="@string/btn_view_catalog"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/button_removeAdd" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

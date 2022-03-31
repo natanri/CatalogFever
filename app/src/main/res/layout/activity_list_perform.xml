@@ -7,38 +7,46 @@
     tools:context=".List_perform">
 
     <TextView
-        android:id="@+id/List"
-        android:layout_width="316dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="56dp"
-        android:text="Inventroy"
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/TextViewInventory"
         android:textAlignment="center"
-        android:textSize="34sp"
+        android:textSize="56sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/tvInventory"
-        android:layout_width="341dp"
-        android:layout_height="339dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="152dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
+    <ListView
+        android:id="@+id/lv1"
+        android:layout_width="360dp"
+        android:layout_height="269dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="68dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <Button
-        android:id="@+id/button4"
-        android:layout_width="217dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="96dp"
-        android:layout_marginTop="532dp"
-        android:onClick="saveProduct"
-        android:text="save"
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/save_item"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/lv1" />
+
+    <Button
+        android:id="@+id/btn_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/btn_home"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_save" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

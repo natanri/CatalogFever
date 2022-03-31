@@ -1,16 +1,16 @@
 package com.example.catalogfever;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class AddRemoveProducts extends AppCompatActivity {
 
-    String Item;
-    String Number;
+    private String Item;
+    private String Number;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

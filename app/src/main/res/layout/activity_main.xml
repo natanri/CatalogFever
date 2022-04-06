@@ -7,37 +7,45 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="383dp"
-        android:layout_height="98dp"
-        android:layout_marginTop="52dp"
-        android:text="Catalog Fever"
-        android:textAlignment="center"
-        android:textSize="60sp"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/textview_homepage"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.429"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button_removeAdd"
-        android:layout_width="308dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="108dp"
-        android:onClick="removeAdd"
-        android:text="@string/btn_add_remove"
+        android:id="@+id/btn_view_catalog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="32dp"
+        android:onClick="catalog"
+        android:text="@string/btn_view_list"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:id="@+id/button2_viewcatalog"
-        android:layout_width="308dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="112dp"
-        android:onClick="listPerform"
-        android:text="@string/btn_view_catalog"
+        android:id="@+id/btn_add_remove_product"
+        android:layout_width="315dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="add_remove"
+        android:text="@string/btn_Add_remove"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_removeAdd" />
-
+        app:layout_constraintTop_toBottomOf="@+id/btn_view_catalog" />
 </androidx.constraintlayout.widget.ConstraintLayout>

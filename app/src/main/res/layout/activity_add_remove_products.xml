@@ -7,92 +7,94 @@
     tools:context=".AddRemoveProducts">
 
     <TextView
-        android:id="@+id/add_remove"
+        android:id="@+id/tv_product"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="32dp"
-        android:text="@string/txt_add_remove_product"
-        android:textSize="24sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/txt_view_product"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/item"
+        android:id="@+id/et_item"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:autofillHints=""
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="64dp"
         android:ems="10"
-        android:hint="@string/txt_product_name"
+        android:hint="@string/et_item"
         android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:textColorHint="#757575"
+        android:textColorHint="#78909C"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/add_remove" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_product"
+        android:autofillHints="" />
 
     <EditText
-        android:id="@+id/number"
+        android:id="@+id/et_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:autofillHints=""
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
-        android:hint="@string/txt_number_item"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:textColorHint="#757575"
+        android:hint="@string/et_number"
+        android:inputType="number"
+        android:textColorHint="#78909C"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/item" />
+        app:layout_constraintTop_toBottomOf="@+id/et_item"
+        android:autofillHints="" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="36dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/number">
+        app:layout_constraintTop_toBottomOf="@+id/et_number">
 
         <RadioButton
             android:id="@+id/rb_add"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/rb_add_Product"
+            android:text="@string/rb_add"
             android:textSize="24sp" />
 
         <RadioButton
             android:id="@+id/rb_remove"
-            android:layout_width="match_parent"
+            android:layout_width="131dp"
             android:layout_height="wrap_content"
-            android:text="@string/rb_remove_product"
+            android:text="@string/rb_remove"
             android:textSize="24sp" />
     </RadioGroup>
 
     <Button
-        android:id="@+id/btn_save_changes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="156dp"
-        android:layout_marginTop="76dp"
+        android:id="@+id/button_save_product"
+        android:layout_width="111dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="44dp"
+        android:onClick="send"
         android:text="@string/btn_save_changes"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
     <Button
-        android:id="@+id/btn_bh"
+        android:id="@+id/button_listview_product"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="156dp"
-        android:layout_marginTop="28dp"
-        android:text="@string/btn_back_home"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_save_changes" />
-
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="44dp"
+        android:onClick="sendToList"
+        android:text="@string/btn_view_list_product"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/button_save_product"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 </androidx.constraintlayout.widget.ConstraintLayout>

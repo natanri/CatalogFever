@@ -14,15 +14,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     //method to go Add and remove product page
-    public void removeAdd(View view){
-        Intent remove_add = new Intent(this, AddRemoveProducts.class);
-        startActivity(remove_add);
+    public void catalog(View view){
+        Intent listview= new Intent(this, List_perform.class);
+        startActivity(listview);
     }
 
     //method to go to inventory page
-    public void listPerform(View view){
-        Intent listInventory = new Intent(this, List_perform.class);
-        startActivity(listInventory);
+    public void add_remove(View view){
+        Intent add_rmv = new Intent(this, AddRemoveProducts.class);
+        startActivity(add_rmv);
     }
 
 }
